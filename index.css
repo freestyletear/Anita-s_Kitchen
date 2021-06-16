@@ -7,8 +7,6 @@ body {
 .part-1 {
   background-image: url("./assets/landing.jpg");
   background-size: cover;
-  margin-left: -10%;
-  margin-right: -10%;
 }
 /*Logo*/
 
@@ -119,11 +117,6 @@ body {
   margin: auto;
   text-align: center;
 }
-
-/*.drinksInfoPhoto2 {
-  float: right;
-}*/
-
 .btn {
   margin-top: 20px;
   padding: 10px;
@@ -131,7 +124,7 @@ body {
   color: #f15a29;
   border: 1px solid #f15a29;
 }
-/*Section 4 Styles*/
+/*Part-4 navigation tabs*/
 ul {
   list-style-type: none;
   display: flex;
@@ -140,8 +133,6 @@ ul {
   text-decoration: none;
 }
 .part-4 {
-  margin-left: -10%;
-  margin-right: -10%;
   text-align: center;
   background-image: url("./assets/foodsBg.jpg");
   background-size: cover;
@@ -173,8 +164,6 @@ ul {
   border-left: 1px solid #777;
   border-bottom: 1px solid #777;
   text-align: center;
-  /*padding-left: 100px;
-  padding-right: 100px;*/
   padding: 25px 100px 25px 100px;
 }
 #arrow {
@@ -182,27 +171,18 @@ ul {
   color: #f15a19;
   font-size: 70px;
 }
-
-a {
-  color: black;
-}
-.tab-content {
+.daily-meals {
   background-color: white;
 }
 
-.carousel-inner {
+.daily{
   padding: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.food-name {
+.meal-name {
   color: #f15a19;
-}
-
-.item {
-  float: left;
-  margin: 10px;
 }
 /* part-5 testimonials*/
 .part-5{
@@ -244,6 +224,8 @@ padding: 0 30px 0 100px;
     color: white;
     padding: 70px;
     text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .subscriptions{
     display: flex;
@@ -280,8 +262,6 @@ padding: 0 30px 0 100px;
 
 .section7 {
   background-color: #f15a29;
-  margin-left: -10%;
-  margin-right: -10%;
 }
 
 .footer {
