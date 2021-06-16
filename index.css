@@ -5,7 +5,7 @@ body {
 /*part 1*/
 
 .part-1 {
-  background-image: url("/assets/landing.jpg");
+  background-image: url("./assets/landing.jpg");
   background-size: cover;
   margin-left: -10%;
   margin-right: -10%;
@@ -44,13 +44,13 @@ body {
   align-items: center;
 }
 #meal-1 {
-  background-image: url('assets/breakfast.jpg');
+  background-image: url('./assets/breakfast.jpg');
 }
 #meal-2 {
-  background-image: url('assets/lunch.jpg');
+  background-image: url('./assets/lunch.jpg');
 }
 #meal-3 {
-  background-image: url('assets/dinner.jpg');
+  background-image: url('./assets/dinner.jpg');
 }
 #h1 {
  
