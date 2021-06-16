@@ -19,24 +19,14 @@
             </div>
         </div>
         <!-- part 2-Drinks, Breakfast, Lunch and Dinner Menu -->
-        <div class="part-2">
-            <div class="row">
-                <div class="row-1">
-                    <p class="happyhour">Happy Hour </p>
-                    <p class="partytime">Party Time</p>
-                </div>
-
-                <div class="col-md-3">
-                    <p id="breakfast">Breakfast</p>
-                </div>
-                <div class="lunch">
-                    <p id="lunch">Lunch</p>
-                </div>
-                <div class="col-md-3 ">
-                    <p id="dinner">Dinner</p>
-                </div>
-
+        <div class="part-2" >
+            <div class="hours">
+                <div id="h1" > <h4>happy hour</h4> </div>
+                <div id="h2" > <h4>Party Time</h4> </div>
             </div>
+            <div class="meal" id="meal-1"> <h4>Breakfast</h4> </div>
+            <div class="meal" id="meal-2"> <h4>Lunch</h4> </div>
+            <div class="meal" id="meal-3"> <h4>Dinner</h4> </div>
         </div>
         <!-- part 3-information on Fast foods and Drinks photos -->
         <div class="part-3">
@@ -77,25 +67,17 @@
             <!-- Tab Navigation List-->
             <div class="navigation-list">
                 <ul class="navigation-tabs">
-                    <li class="active"><a data-toggle="tab" href="#fastFood">Fast Food</a></li>
-                    <li><a data-toggle="tab" href="#drinks">Drinks</a></li>
-                    <li><a data-toggle="tab" href="#chicken">Chicken</a></li>
-                    <li><a data-toggle="tab" href="#rice">Rice</a></li>
+                    <li class="active"><a href="#fastFood">Fast Food</a></li>
+                    <li><a href="#drinks">Drinks</a></li>
+                    <li><a href="#chicken">Chicken</a></li>
+                    <li><a href="#rice">Rice</a></li>
                 </ul>
-                <!-- Tab Content includes four carousels for the four tabs-->
                 <div class="tab-content">
-                    <!-- Content for Fast Food Tab containing it's carousel-->
                     <div id="fastfood" class="tab-pane fade in active">
                         <div id="fastFoodCarousel" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#fastFoodCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#fastFoodCarousel" data-slide-to="1" class="active"></li>
-                                <li data-target="#fastFoodCarousel" data-slide-to="2" class="active"></li>
-                            </ol>
-
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
+                                <P id="arrow" > < </P>
                                 <div class="item active">
                                     <img src="/assets/chickenBurger.jpg" alt="Chicken Burger">
                                     <h5 class="food-name">Chicken Burger</h5>
@@ -108,86 +90,51 @@
                                     <img src="/assets/chickenPizza.jpg" alt="Chicken Pizza">
                                     <h5 class="food-name">Chicken Pizza</h5>
                                 </div>
+                                <P id="arrow" > > </P>
                             </div>
-                            <!-- Left and right controls -->
-                            <a class="left carousel-control" href="#fastFoodCarousel" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#fastFoodCarousel" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
                         </div>
                     </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Section 5 testimonials -->
+         <!-- Section 5 testimonials -->
         <div class="part-5">
-            <div class="row">
-                <div class="customers">
-                    <h4 class="note">Our happy customers <br> 
-                        <br class="name"> George Richard <br> 
-                        <br> Great food! Menu is awesome, their foods are not only great but also have great pricing. I'll highly recommend them :)</h4>
-                    <div id="testimonials" class="carousel" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#testimonials" data-slide-to="0" class="active"></li>
-                            <li data-target="#testimonials" data-slide-to="1"></li>
-                            <li data-target="#testimonials" data-slide-to="2"></li>
-                        </ol>
+            <div class="customers">
+                <h4 class="header"> Our Happy Customers</h4>
+                <h3>George Richard</h3>
+                <P>Great food! Menu is awesome, their foods are not only great but also have great pricing. <br>I'll highly recommend them:)</P>
+                <span style="color: red;">&#60;</span>
+                <img src="./assets/p1.png">
+                <img src="./assets/p2.png">
+                <img src="./assets/p3.png">
+                <span style="color: red;">&#62;</span>
+            </div>
+            <div class="border">
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div><p>Great food! Menu is awesome, their foods are not only great but also have great pricing. I'll highly recommend them :)</p></div>
-                            <div class="item ">
-                                <img src="assets/p1.png" alt="Customer 2">
-                            </div>
-                            <div class="item active">
-                                <img src="assets/p2.png" alt="Customer 1">
-                            </div>
-                            <div class="item ">
-                                <img src="assets/p3.png" alt="Customer 3">
-                            </div>
-                        </div>
-
-
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#testimonials" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#testimonials" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="more-info-about">
-                    <h4>About Menu</h4>
-                    <p>We are a small team of 9 members. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-                </div>
+            </div>
+            <div class="about">
+                <h4 class="header">About Menu</h4>
+                <p>We are menu a little team of 7 members, Ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                     error doloremque odio architecto minima <br>
+                     non nihil sint facilis praesentium. 
+                     Accusantium, <br> voluptatibus nesciunt vel quo quisquam aliquid labore incidunt impedit tenetur?
+                </p>
             </div>
         </div>
+       
+       
         <!-- Section 6 email entry form for a subscription list-->
-        <div class="section6">
-            <p> Get our daily food items delivered to your email</p>
-            <div class="form-group">
-                <form id="subscribtionList">
-                    <div class="rows-2">
-                        <div class="email">
-                            <input type="email" id="emailaddress" class="form-control" placeholder="Your email">
-                        </div>
-                        <div class="Subscribe">
-                            <input type="button" value="Subscribe" id="subscribe" class="form-control">
-                        </div>
-                    </div>
-                </form>
-            </div>
+        <div class="section-6">
+              <h2>Get your daily items delivered to your email</h2>
+              <div class="subscriptions">
+                  <div class="email">
+                      <p>Your email</p>
+                  </div>
+                  <div class="subscribe">
+                      <p>Subscribe</p>
+                  </div>
+              </div>
         </div>
         <!-- Section 7 footer-->
         <div class="section7">

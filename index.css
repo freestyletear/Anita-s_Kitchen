@@ -25,84 +25,42 @@ body {
 }
 /*part 2-Drinks, Breakfast, Lunch and Dinner Menu*/
 
-/*.part-2 {
-      text-align: center;
-      color: white;
-      font-style: italic;
-      font-size: 20px;
-      display: flex;
-      flex-direction: row;
-  }*/
-
-.row-1 {
+.part-2 {
   display: flex;
-  flex-direction: column;
   text-align: center;
   color: white;
-  font-style: italic;
-  font-size: 20px;
-  height: fit-content;
-  padding-left: 20%;
-  margin-left: -20%;
 }
-.row {
+.hours {
+  width: 25%;
+  height: 200px;
+}
+.meal {
+   width: 25%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   display: flex;
-  flex-direction: row;
-  text-align: center;
-  color: white;
-  font-style: italic;
-  font-size: 20px;
-  width: fit-content;
-  margin-top: -1.3%;
-  justify-content: stretch;
+  justify-content: center;
+  align-items: center;
 }
-
-/*@media (min-width: 992px) {
-      .col-md-3 {
-          padding-left: 0;
-          padding-right: 0;
-      }
-  }*/
-
-.happyhour {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: lightgrey;
-  margin-bottom: -37%;
+#meal-1 {
+  background-image: url('assets/breakfast.jpg');
 }
-
-.partytime {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f15a29;
+#meal-2 {
+  background-image: url('assets/lunch.jpg');
 }
-
-#breakfast {
-  background-image: url("/assets/breakfast.jpg");
-  background-size: cover;
-  padding: 100px;
+#meal-3 {
+  background-image: url('assets/dinner.jpg');
 }
-
-#lunch {
-  background-image: url("/assets/lunch.jpg");
-  background-size: cover;
-  padding: 100px;
-  position: relative;
+#h1 {
+ 
+ background-color: lightgrey;
+ padding: 20px;
 }
-
-#dinner {
-  background-image: url("/assets/dinner.jpg");
-  background-size: cover;
-  padding: 100px;
+#h2 {
+   background-color: #F15A29;
+    padding: 20px;
 }
-
-/*#dinner:hover,
-#lunch:hover,
-#breakfast:hover {
-  color: #f15a29;
-  opacity: 0.7;
-  filter: alpha(opacity=70);
-}*/
 /* part 3-information on Fast foods and Drinks photos */
 /* Fast Food information */
 .part-3 {
@@ -219,17 +177,15 @@ ul {
   padding-right: 100px;*/
   padding: 25px 100px 25px 100px;
 }
+#arrow {
+  align-items: center;
+  color: #f15a19;
+  font-size: 70px;
+}
 
 a {
   color: black;
 }
-
-.navigation-tabs > li.active > a,
-.navigation-tabs > li.active > a:hover,
-.navigation-tabs > li.active > a:focus {
-  color: #f15a19;
-}
-
 .tab-content {
   background-color: white;
 }
@@ -248,151 +204,78 @@ a {
   float: left;
   margin: 10px;
 }
-
-.carousel-control {
-  opacity: 1;
+/* part-5 testimonials*/
+.part-5{
+  display: flex;
+ border: 2px solid rgba(211, 211, 211, 0.44);
+ box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.14);
+  padding-left:30px;
+  padding-right:30px;
+  margin: 25px 50px 25px 50px;
+}
+.customers{
+  text-align: center;
+  padding: 0 100px 0 30px;
+  
+}
+.header {
   color: #f15a19;
 }
 
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
+.border {
+  border: 2px solid rgba(211, 211, 211, 0.44);
+  height: 200px;
+  margin: 10px 0 10px;
 }
-/* part-5 testimonials*/
-.name {
-  color: black;
-}
-
-.part5 > .row {
-  width: 80%;
-  margin: 50px auto;
-  border: 2px solid #ddd;
-  box-shadow: 0px 0px 5px lightgrey;
-  padding: 40px;
-}
-
-.customers {
-  margin: auto;
+.about{
+padding: 0 30px 0 100px;
   text-align: center;
-  padding: 20px;
 }
-
-.note {
-  color: #f15a29;
-  font-weight: bold;
+.text {
+  color: solid rgba(211, 211, 211, 0.44);;
 }
-
-.carousel-inner > .item > img {
-  margin: auto;
-}
-
-#testimonials .carousel-inner {
-  padding: 0px;
-}
-
-.carousel-indicators {
-  display: none;
-}
-
-.item h5 {
-  margin-top: 1px;
-}
-/* Styles for customer testimonials carousel*/
-
-/*.carousel-inner .item.left.active {
-      transform: translateX(-33%);
-  }
-  
-  .carousel-inner .item.right.active {
-      transform: translateX(33%);
-  }
-  
-  .carousel-inner .item.next {
-      transform: translateX(33%)
-  }
-  
-  .carousel-inner .item.prev {
-      transform: translateX(-33%)
-  }
-  
-  .carousel-inner .item.right,
-  .carousel-inner .item.left {
-      transform: translateX(0);
-  }*/
-
-.about {
-  padding: 20px;
-  text-align: center;
-  border-left: 2px solid #ddd;
-}
-
-.about > h4 {
-  color: #f15a29;
-  font-weight: bold;
+.customers span {
+  align-items: center;
+  font-size: 70px;
 }
 /*Section 6 Styles*/
-
-.section6 {
-  text-align: center;
-  background-image: url("/assets/subscribe.jpg");
-  background-size: cover;
-  color: white;
-  font-size: 20px;
-  margin-left: -10%;
-  margin-right: -10%;
-  padding: 80px;
+.section-6{
+    background-image: url(./assets/subscribe.jpg);
+    color: white;
+    padding: 70px;
+    text-align: center;
+}
+.subscriptions{
+    display: flex;
+    justify-content: space-around;
+    width: 48%;
+    margin-left: 350px;
+    text-align: center;
+}
+.section-6 p{
+    text-align: center;
+    font-size: 20px;
+}
+.subscriptions p{
+    text-align: center;
+}
+.email{
+    background-color: slategrey;
+    opacity: 0.5;
+    width:130px;
+    padding-right: 40%;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+.subscribe{
+    background-color: #F15A29;
+    width: 150px;
+    border-radius: 5px;
+}
+.subscribe p{
+    text-align: center;
 }
 
-.form-group {
-  width: 50%;
-  margin: auto;
-}
-
-.section6 p {
-  font-size: 30px;
-}
-
-input[type="email"] {
-  background-color: rgba(255, 255, 255, 0.4);
-  font-size: 16px;
-}
-
-input[type="button"] {
-  background-color: #f15a29;
-  color: white;
-  font-size: 16px;
-}
-
-.form-control {
-  border: 0;
-  border-radius: 2px;
-}
-
-.form-control::-moz-placeholder {
-  color: white;
-  opacity: 1;
-}
-
-.form-control:-ms-input-placeholder {
-  color: white;
-}
-
-.form-control::-webkit-input-placeholder {
-  color: white;
-}
-
-#output {
-  font-size: 20px;
-}
-
-.footer .fa {
-  margin-right: 15px;
-  margin-left: 15px;
-}
-.rows-2 {
-  display: flex;
-  flex-direction: row;
-}
 /*Section 7 Styles: Footer*/
 
 .section7 {
